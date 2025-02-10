@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <style>
+
+
+        /* 正常状态下的样式 */
+        p {
+            color: black;
+            font-size: 16px;
+            transition: all 0.3s; /* 添加过渡效果，使变化更平滑 */
+        }
+        /* 鼠标悬停时的样式 */
+        p:hover {
+            color: blue;
+            font-size: 18px;
+            background-color: lightgray;
+        }
+    
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2em;
+        }
+
+        section {
+            padding: 2em;
+            margin: 2em;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <h1>吴虹霆粉丝后援会</h1>
+        <p>----守护最好的女特务----</p>
+    </header>
+
+    <!-- 个人简介 -->
+    <section id="about">
+        <h2>关于her</h2>
+        <a href="https://map.baidu.com/poi/%E7%8A%B6%E5%85%83%E5%BA%9C%E7%AC%AC/@11661905.899429178,3710453.5387354996,19z?uid=7775ae19b325aced17948e27&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl"><p>我是一名大日本帝国的女特务，现潜伏于状元府</p></a>
+        <a href="./68eed3dc7aa2e9a30615e35b6826a5e6.mp4"><img src="./36B6EEC2C08D2BD5B96B660A00D61782.jpg" alt="本人太帅，无法显示" title="不要点开QAQ" width="200"></a>    
+        <br>
+        <a href="./renwu.html">更多人物生平</a>
+</section>
+
+    <!-- 技能展示 -->
+    
+    <section id="skills">
+        <h2>技能</h2>
+        <ul>
+            <li>素数的判别</li>
+            <li>说鬼子话</li>
+            <li>高等数学</li>
+            <li>龟壳</li>
+        </ul>
+    </section>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>洪婷语录</title>
+        <style>
+            p {
+                cursor: pointer;
+                color: #007BFF;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <!-- 洪婷语录 -->
+        <section id="sayings">
+            <h2>洪婷语录</h2>
+            <ul>
+                <li>
+                    <!-- 用于显示可点击的文本，使用唯一的 id -->
+                    <p id="clickableText1">吴虹霆是傻呗</p>
+                    <!-- 音频元素，src 属性指定音频文件的路径 -->
+                    <audio id="audioPlayer1" src="../muisic/sb.m4a"></audio>
+                </li>
+                <li>
+                    <!-- 用于显示可点击的文本，使用唯一的 id -->
+                    <p id="clickableText2">他说：我在外面做鸡</p>
+                    <!-- 音频元素，src 属性指定音频文件的路径 -->
+                    <audio id="audioPlayer2" src="../muisic/zuoji.m4a"></audio>
+                </li>
+                <li>
+                       <!-- 用于显示可点击的文本，使用唯一的 id -->
+                       <p id="clickableText3">一阵欢快的歌声</p>
+                       <!-- 音频元素，src 属性指定音频文件的路径 -->
+                       <audio id="audioPlayer3" src="../muisic/kandiao.m4a"></audio>
+
+                </li>
+                <li>龟壳</li>
+            </ul>
+        </section>
+    
+        <script>
+            // 定义一个函数来处理音频播放和暂停逻辑
+            function setupAudioPlayback(clickableTextId, audioPlayerId) {
+                const clickableText = document.getElementById(clickableTextId);
+                const audioPlayer = document.getElementById(audioPlayerId);
+    
+                clickableText.addEventListener('click', function () {
+                    if (audioPlayer.paused) {
+                        audioPlayer.play();
+                    } else {
+                        audioPlayer.pause();
+                    }
+                });
+            }
+    
+            // 调用函数为每个可点击文本和音频元素设置事件监听器
+            setupAudioPlayback('clickableText1', 'audioPlayer1');
+            setupAudioPlayback('clickableText2', 'audioPlayer2');
+            setupAudioPlayback('clickableText3', 'audioPlayer3');
+
+        </script>
+    </body>
+    
+    </html>
+
+    <!-- 作品展示 -->
+    <section id="projects">
+        <h2>作品</h2>
+        <ul>
+            <li><a href="https://space.bilibili.com/470874371?spm_id_from=333.337.0.0">项目 1：个人B站主页 </a></li>
+            <li><a href="#">项目 2：洪婷相册（相册洪婷）</a></li>
+        </ul>
+    </section>
+
+    <!-- 联系方式 -->
+    <section id="contact">
+        <h2>联系我</h2>
+        <p>邮箱：loneskynone@163.com</p>
+        <p>电话：19113712243</p>
+    </section>
+</body>
+
+</html>
